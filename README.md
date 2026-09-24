@@ -6,6 +6,7 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/adamtrain/panc/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/adamtrain/panc/actions/workflows/ci.yml/badge.svg"></a>
   <img alt="Python 3.13+" src="https://img.shields.io/badge/python-3.13%2B-3776ab?logo=python&logoColor=white">
   <a href="https://github.com/astral-sh/uv"><img alt="uv" src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/uv/main/assets/badge/v0.json"></a>
   <a href="https://github.com/astral-sh/ruff"><img alt="Ruff" src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json"></a>
@@ -126,6 +127,7 @@ column.
 uv sync                         # set up the environment
 uv run pytest                   # run the tests
 uv run ruff check . && uv run ruff format .
+uv run ty check                 # type-check
 uv run scripts/screenshots.py   # regenerate docs/*.svg
 ```
 

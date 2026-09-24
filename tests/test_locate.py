@@ -14,10 +14,16 @@ def result_for(returned: str, cuts: list[int]) -> Result:
     return Result.from_api({"text": returned, "windows": windows})
 
 
+def all_found(starts: list[int | None]) -> list[int]:
+    """The offsets, after checking that every segment was located."""
+    assert None not in starts
+    return [s for s in starts if s is not None]
+
+
 def test_exact_text_uses_pangram_offsets_shifted_into_the_original():
     returned = "First part.\n\nSecond part."
     original = "  \n" + returned + "\n"
-    starts = segment_starts(original, result_for(returned, [11]))
+    starts = all_found(segment_starts(original, result_for(returned, [11])))
     # The second window begins with "\n\n", so it's reported at the "S" after them.
     assert [original[s] for s in starts] == ["F", "S"]
     assert [line_col(original, s) for s in starts] == [(2, 1), (4, 1)]
@@ -26,7 +32,7 @@ def test_exact_text_uses_pangram_offsets_shifted_into_the_original():
 def test_normalized_text_is_found_by_its_opening_words():
     original = "He said “hello”  there.\r\n\r\nThen—quietly—left."
     returned = 'He said "hello" there.\n\nThen-quietly-left.'
-    starts = segment_starts(original, result_for(returned, [22]))
+    starts = all_found(segment_starts(original, result_for(returned, [22])))
     assert starts == [0, original.index("Then")]
     assert line_col(original, starts[1]) == (3, 1)
 

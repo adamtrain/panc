@@ -64,6 +64,7 @@ def test_missing_clipboard_tool_explains_alternatives(monkeypatch):
     monkeypatch.setattr(cli, "read_clipboard", broken)
     with pytest.raises(cli.InputError) as e:
         cli.resolve_input(None, None, FakeStdin("", piped=False))
+    assert e.value.hint is not None
     assert "argument" in e.value.hint
 
 
