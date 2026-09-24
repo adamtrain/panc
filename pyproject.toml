@@ -25,6 +25,11 @@ dependencies = [
     "typer>=0.27.2",
 ]
 
+[project.urls]
+Homepage = "https://github.com/adamtrain/panc"
+Repository = "https://github.com/adamtrain/panc"
+Issues = "https://github.com/adamtrain/panc/issues"
+
 [project.scripts]
 panc = "panc.cli:main"
 

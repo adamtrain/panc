@@ -32,14 +32,20 @@
 ## Install
 
 You'll need [uv](https://docs.astral.sh/uv/) and a [Pangram](https://www.pangram.com) API key.
-From a clone of this repo:
 
 ```sh
-uv tool install .
+uv tool install git+https://github.com/adamtrain/panc
 ```
 
-That puts `panc` on your `PATH`. Use `uv tool install --editable .` instead if you plan to hack
-on it. Then give it your key, ideally in your shell profile:
+That puts `panc` on your `PATH`. To hack on it, clone the repo and install it in editable mode,
+so your changes take effect right away:
+
+```sh
+git clone https://github.com/adamtrain/panc && cd panc
+uv tool install --editable .
+```
+
+Then give panc your key, ideally in your shell profile:
 
 ```sh
 export PANGRAM_API_KEY=your-key
