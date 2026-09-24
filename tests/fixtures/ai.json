@@ -1,0 +1,28 @@
+{
+  "stage": "STAGE_SUCCESS",
+  "text": "In today's fast-paced digital landscape, effective time management has become more important than ever. By leveraging proven strategies such as prioritization, time-blocking, and mindful delegation, professionals can unlock new levels of productivity. Ultimately, mastering these skills empowers individuals to achieve a healthier work-life balance.",
+  "version": "4.0",
+  "headline": "AI Generated",
+  "prediction": "We believe that this text is fully AI-generated.",
+  "prediction_short": "AI",
+  "fraction_ai": 1.0,
+  "fraction_ai_assisted": 0.0,
+  "fraction_human": 0.0,
+  "num_ai_segments": 1,
+  "num_ai_assisted_segments": 0,
+  "num_human_segments": 0,
+  "windows": [
+    {
+      "text": "In today's fast-paced digital landscape, effective time management has become more important than ever. By leveraging proven strategies such as prioritization, time-blocking, and mindful delegation, professionals can unlock new levels of productivity. Ultimately, mastering these skills empowers individuals to achieve a healthier work-life balance.",
+      "label": "AI-Generated",
+      "ai_assistance_score": 0.99,
+      "confidence": "High",
+      "start_index": 0,
+      "end_index": 349,
+      "word_count": 44,
+      "token_length": 57,
+      "is_humanized": false,
+      "humanizer_score": 0.02
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "stage": "STAGE_SUCCESS",
+  "text": "I started keeping bees the summer my dad got sick. Mostly it was an excuse to be outside, away from the hum of the oxygen machine, and I didn't know the first thing about them. The first hive died by August. I cried more over those bees than I let myself cry over anything else that year.\n\nBeekeeping offers a unique opportunity to connect with nature while supporting vital pollinator populations. By understanding the intricate social structure of the colony, beekeepers can foster healthy hives that thrive season after season. Moreover, the practice cultivates patience, mindfulness, and a deeper appreciation for the delicate balance of our ecosystems.\n\nThe second year went better. I learned to move slowly, to read the frames, to tell the difference between a queen cell and a supersedure cell, which honestly still confuses me. Each inspection became a quiet ritual that helped me process everything that was happening at home.\n\nDad never saw the honey. I jarred the first batch in October and put one on his shelf anyway. It's still there.",
+  "version": "4.0",
+  "headline": "AI Detected",
+  "prediction": "We believe that this document is a mix of human-written, AI-assisted, and AI-generated content.",
+  "prediction_short": "Mixed",
+  "fraction_ai": 0.284,
+  "fraction_ai_assisted": 0.267,
+  "fraction_human": 0.449,
+  "num_ai_segments": 1,
+  "num_ai_assisted_segments": 1,
+  "num_human_segments": 2,
+  "windows": [
+    {
+      "text": "I started keeping bees the summer my dad got sick. Mostly it was an excuse to be outside, away from the hum of the oxygen machine, and I didn't know the first thing about them. The first hive died by August. I cried more over those bees than I let myself cry over anything else that year.\n\n",
+      "label": "Human Written",
+      "ai_assistance_score": 0.03,
+      "confidence": "High",
+      "start_index": 0,
+      "end_index": 290,
+      "word_count": 57,
+      "token_length": 74,
+      "is_humanized": false,
+      "humanizer_score": 0.01
+    },
+    {
+      "text": "Beekeeping offers a unique opportunity to connect with nature while supporting vital pollinator populations. By understanding the intricate social structure of the colony, beekeepers can foster healthy hives that thrive season after season. Moreover, the practice cultivates patience, mindfulness, and a deeper appreciation for the delicate balance of our ecosystems.\n\n",
+      "label": "AI-Generated",
+      "ai_assistance_score": 0.98,
+      "confidence": "High",
+      "start_index": 290,
+      "end_index": 659,
+      "word_count": 50,
+      "token_length": 65,
+      "is_humanized": false,
+      "humanizer_score": 0.12
+    },
+    {
+      "text": "The second year went better. I learned to move slowly, to read the frames, to tell the difference between a queen cell and a supersedure cell, which honestly still confuses me. Each inspection became a quiet ritual that helped me process everything that was happening at home.\n\n",
+      "label": "AI-Assisted",
+      "ai_assistance_score": 0.61,
+      "confidence": "Medium",
+      "start_index": 659,
+      "end_index": 937,
+      "word_count": 47,
+      "token_length": 61,
+      "is_humanized": true,
+      "humanizer_score": 0.87
+    },
+    {
+      "text": "Dad never saw the honey. I jarred the first batch in October and put one on his shelf anyway. It's still there.",
+      "label": "Human Written",
+      "ai_assistance_score": 0.08,
+      "confidence": "Low",
+      "start_index": 937,
+      "end_index": 1048,
+      "word_count": 22,
+      "token_length": 28,
+      "is_humanized": false,
+      "humanizer_score": 0.02
+    }
+  ]
+}

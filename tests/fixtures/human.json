@@ -1,0 +1,28 @@
+{
+  "stage": "STAGE_SUCCESS",
+  "text": "ok so the dishwasher thing. I finally caved and called the repair guy, he took one look, fished a chunk of lemon peel out of the drain pump and charged me $85. Eighty-five dollars for a lemon. My roommate is never letting me live this down and honestly? Fair.",
+  "version": "4.0",
+  "headline": "Human Written",
+  "prediction": "We believe that this text is fully human-written.",
+  "prediction_short": "Human",
+  "fraction_ai": 0.0,
+  "fraction_ai_assisted": 0.0,
+  "fraction_human": 1.0,
+  "num_ai_segments": 0,
+  "num_ai_assisted_segments": 0,
+  "num_human_segments": 1,
+  "windows": [
+    {
+      "text": "ok so the dishwasher thing. I finally caved and called the repair guy, he took one look, fished a chunk of lemon peel out of the drain pump and charged me $85. Eighty-five dollars for a lemon. My roommate is never letting me live this down and honestly? Fair.",
+      "label": "Human Written",
+      "ai_assistance_score": 0.01,
+      "confidence": "High",
+      "start_index": 0,
+      "end_index": 259,
+      "word_count": 49,
+      "token_length": 64,
+      "is_humanized": false,
+      "humanizer_score": 0.02
+    }
+  ]
+}
